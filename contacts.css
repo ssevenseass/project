@@ -1,0 +1,39 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.nesolestag-enadenud {
+    width: 615px;
+    margin: 0 auto;
+}
+
+.kesednsoled:after,
+.kesednsoled:before {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+}
+
+h3 {
+    font-family: "Century Gothic";
+    color: dimgrey;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: "Century Gothic";
+    color: lightslategray;
+    font-size: 20px;
+}
+
+.ico-wrap {
+    height: 10%;
+    margin: 0;
+}
+
+h5 {
+    font-family: "Century Gothic";
+    color: grey;
+    font-size: 15px;
+}

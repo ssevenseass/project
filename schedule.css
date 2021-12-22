@@ -1,0 +1,100 @@
+
+h6 {
+    font-size: 25px;
+    font-family: "Century Gothic";
+    color: dimgray;
+}
+
+.tabl {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+
+}
+
+.mtb-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.t {
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    white-space: nowrap;
+    font-family: 'Century Gothic';
+
+}
+
+.t th, .t td {
+    text-align: center;
+    padding: 10px;
+}
+
+.t th {
+    background-color: whitesmoke;
+    color: dimgray;
+
+}
+
+.t th:nth-child(odd) {
+    background: lightgray;
+}
+
+.t tr:nth-child(even) {
+    background: lightgrey;
+}
+
+.t tr {
+    transition: all .3s;
+}
+
+.t tr:hover {
+    background-color: lightgrey;
+}
+
+.t td:not(:last-child) {
+    border-right: 1px solid dimgrey;
+}
+
+
+
+@media (max-width: 1000px) {
+    .t {
+        display: block;
+        width: 100%;
+    }
+    .t thead,
+    .t tbody,
+    .t thead th {
+        display: block;
+    }
+    .t thead {
+        float: left;
+    }
+    .t tbody {
+        overflow-x: auto;
+    }
+    .t tbody tr {
+        display: table-cell;
+        border-right: 1px solid lightgrey;
+    }
+    .t tbody tr:last-child {
+        border-right: none;
+    }
+    .t td {
+        display: block;
+    }
+    .tabl.t td {
+        border-right: none;
+    }
+    .t td, .t th {
+        padding: 10px 2px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 160px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+
+}
